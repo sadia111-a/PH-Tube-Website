@@ -4,16 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Tube</title>
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
   <body>
-    <header></header>
-
+    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-16">
+      <nav class="my-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="normal-case text-xl">
+              <img src="./Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <button
+              class="btn btn-secondary text-[#252525] bg-[#25252533] border-none text-xl font-medium"
+            >
+              Sort by view
+            </button>
+          </div>
+          <div class="navbar-end">
+            <!-- <a class="btn text-xl font-medium text-white bg-red-600">Blog</a> -->
+            <button class="btn text-xl font-medium text-white bg-[#FF1F3D]">
+              Blog
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="w-11/12 mx-auto">
+      <hr />
+    </div>
     <main></main>
     <footer></footer>
     <script src="index.js"></script>
