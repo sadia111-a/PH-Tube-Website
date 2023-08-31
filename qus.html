@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question and ans</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-16 my-8">
+    <div>
+      <h3 class="text-xl font-semibold">
+        <span class="text-red-400">Q1.</span>Discuss the scope of var, let, and
+        const
+      </h3>
+      <p>
+        <span class="text-lime-600 font-semibold text-lg">Ans:</span>Certainly!
+        In programming, var, let, and const are used to declare variables in
+        JavaScript. They have different scopes and behaviors. Here's a breakdown
+        of their scopes: <br />
+        <span class="text-lg font-medium">1.var:</span> <br />
+        Variables declared with var have function scope or global scope,
+        depending on whether they are declared within a function or outside of
+        any function. This means that variables declared with var are not
+        block-scoped; they are accessible throughout the entire function or
+        globally if declared outside of any function. var variables are also
+        subject to "hoisting," where the declaration is moved to the top of the
+        function or scope during the compilation phase. <br />
+        <span class="text-lg font-medium">2.let:</span> <br />
+
+        Variables declared with let have block scope. A block is typically a set
+        of curly braces {} that define a code block, such as in loops or
+        conditional statements. Unlike var, let variables are not hoisted to the
+        top of the scope, which can prevent some unexpected behaviors in your
+        code. let allows you to create variables that are limited in scope to
+        the block, statement, or expression containing them. <br />
+        <span class="text-lg font-medium">3.const:</span> <br />
+
+        Variables declared with const also have block scope, similar to let.
+        However, variables declared with const must be assigned a value when
+        they are declared, and once assigned, their value cannot be changed.
+        They are constant. Like let, const variables are also not hoisted.
+      </p>
+    </div>
+    <!-- second question -->
+    <div class="my-6">
+      <h3 class="text-xl font-semibold">
+        <span class="text-red-400">Q2.</span>Tell us the use cases of null and
+        undefined?
+      </h3>
+      <p>
+        <span class="text-lime-600 font-semibold text-lg">Ans:</span>
+        In JavaScript, null and undefined are used to represent the absence of a
+        value. Null is explicitly assigned by the programmer to indicate that a
+        variable has no value, while undefined means that a variable has been
+        declared but has not been assigned a value. These values can be used in
+        various scenarios such as checking for the existence of an object
+        property, indicating errors or empty values in functions, and
+        initializing variables.
+      </p>
+    </div>
+    <!-- third question -->
+    <div class="my-6">
+      <h3 class="text-xl font-semibold">
+        <span class="text-red-400">Q3.</span>What do you mean by REST API? ?
+      </h3>
+      <p>
+        <span class="text-lime-600 font-semibold text-lg">Ans:</span> REST API
+        stands for Representational State Transfer Application Programming
+        Interface. It is a set of guidelines and principles for building and
+        interacting with web services. REST is an architectural style that is
+        commonly used in designing networked applications. REST APIs allow
+        different software applications to communicate with each other over the
+        internet using HTTP methods like GET, POST, PUT, and DELETE. The key
+        principles of REST include: <br />
+        <br />
+        <span class="text-lg font-medium">1.Client-Server Architecture:</span>
+        Separation of concerns between the client (the application making the
+        request) and the server (the application providing the resource). <br />
+        <br />
+        <span class="text-lg font-medium">2.Statelessness:</span> Each request
+        from the client to the server must contain all the information needed to
+        understand and process the request. The server doesn't store any client
+        state between requests. <br />
+        <br />
+        <span class="text-lg font-medium">3.Cacheability:</span> Responses from
+        the server can be cached by clients to improve performance and reduce
+        the need for repeated requests. <br />
+        <br />
+        <span class="text-lg font-medium">4.Uniform Interface:</span> A
+        consistent set of well-defined methods (HTTP verbs) for interacting with
+        resources. Resources are represented in a standardized format, such as
+        JSON or XML. <br />
+        <br />
+        <span class="text-lg font-medium">5.Layered System:</span> The
+        architecture can be composed of multiple layers, with each layer having
+        a specific functionality. <br />
+        <br />
+        <span class="text-lg font-medium">6.Code on Demand (optional):</span>
+        The ability to send executable code from the server to the client, which
+        the client can run within its own context.
+        <br />
+        <br />
+        REST APIs are widely used for building web applications, mobile apps,
+        and other distributed systems. They provide a flexible and scalable way
+        for different software components to communicate and exchange data over
+        the internet.
+      </p>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>
