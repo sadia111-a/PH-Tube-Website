@@ -9,7 +9,7 @@ const handleCategory = async () => {
     console.log(category.category_id);
     const div = document.createElement("div");
     div.innerHTML = `
-    <button onclick=" handleLoadNews('${category.category_id}')" class="btn">${category.category}</button>
+    <button onclick=" handleLoadNews('${category.category_id}')" class="btn hover:text-white hover:bg-[#FF1F3D]">${category.category}</button>
     
     `;
     btnContainer.appendChild(div);
