@@ -32,10 +32,10 @@ const handleLoadNews = async (categoryId) => {
   data.data?.forEach((news) => {
     const div = document.createElement("div");
     div.innerHTML = `
-      <div class="card bg-base-100 shadow-xl mb-4 ">
-              <div class="relative">
+      <div class="card bg-base-100 shadow-xl mb-2 ">
+              <div class="relative ">
               <figure >
-                <img class="h-44 w-full" src=${news?.thumbnail} />
+                <img class="h-44 rounded-lg w-full" src=${news?.thumbnail} />
               </figure>
                <div class="absolute right-2 bottom-2 text-white text-xs bg-black rounded-md px-3">
                
