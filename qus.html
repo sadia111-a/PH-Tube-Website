@@ -13,37 +13,40 @@
   </head>
   <body class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-16 my-8">
     <div>
-      <h3 class="text-xl font-semibold">
+      <h3 class="text-2xl font-semibold">
         <span class="text-red-400">Q1.</span>Discuss the scope of var, let, and
         const
       </h3>
       <p>
-        <span class="text-lime-600 font-semibold text-lg">Ans:</span>Certainly!
-        In programming, var, let, and const are used to declare variables in
-        JavaScript. They have different scopes and behaviors. Here's a breakdown
-        of their scopes: <br />
+        <span class="text-lime-600 font-semibold text-lg">Ans:</span>In
+        JavaScript, the scope of variables declared using var, let, and const
+        differs, determining where and how these variables can be accessed
+        within your code. Let's delve into the scope of each of these variable
+        declarations:
+        <br />
         <span class="text-lg font-medium">1.var:</span> <br />
-        Variables declared with var have function scope or global scope,
-        depending on whether they are declared within a function or outside of
-        any function. This means that variables declared with var are not
-        block-scoped; they are accessible throughout the entire function or
-        globally if declared outside of any function. var variables are also
-        subject to "hoisting," where the declaration is moved to the top of the
-        function or scope during the compilation phase. <br />
+        <ul class="list-disc pl-8">
+          <li>var has a function-level or global scope, depending on where it's declared.</li>
+          <li>If declared inside a function, it's limited to that function's scope.</li>
+          <li>If declared outside of any function, it becomes a global variable, accessible throughout the entire script.</li>
+          <li>Variables declared with var are hoisted to the top of their containing function or script, which means you can access them before their declaration, but they'll have an initial value of undefined.</li>
+        </ul>
+        <br />
         <span class="text-lg font-medium">2.let:</span> <br />
+       <ul class="list-disc pl-8">
+        <li>let has a block-level scope, meaning it's confined to the block (enclosed by curly braces) in which it's declared.</li>
+        <li>Unlike var, let variables are not hoisted to the top of the block. They can only be accessed after their declaration within the block.</li>
+        <li>Variables declared with let can be reassigned within the same block-level scope.</li>
 
-        Variables declared with let have block scope. A block is typically a set
-        of curly braces {} that define a code block, such as in loops or
-        conditional statements. Unlike var, let variables are not hoisted to the
-        top of the scope, which can prevent some unexpected behaviors in your
-        code. let allows you to create variables that are limited in scope to
-        the block, statement, or expression containing them. <br />
+       </ul>
+        
+        <br />
         <span class="text-lg font-medium">3.const:</span> <br />
 
-        Variables declared with const also have block scope, similar to let.
-        However, variables declared with const must be assigned a value when
-        they are declared, and once assigned, their value cannot be changed.
-        They are constant. Like let, const variables are also not hoisted.
+        <ul class="list-disc pl-8">
+          <li>const also has block-level scope, similar to let. It's limited to the block in which it's declared.</li>
+          <li>Variables declared with const must be assigned a value when declared and cannot be reassigned to a new value. However, the properties of objects and elements of arrays declared with const can be modified.</li>
+        </ul>
       </p>
     </div>
     <!-- second question -->

@@ -60,7 +60,7 @@ const handleLoadNews = async (categoryId) => {
                   </h2>
                 </div>
                 <div class="my-2">
-                  <p class="text-[#171717B3] flex gap-1 text-sm font-normal">
+                  <p class="text-[#171717B3] flex gap-2 text-sm font-normal">
                     ${news.authors[0].profile_name}
                     <span>  ${
                       news.authors[0].verified === true
@@ -79,9 +79,7 @@ const handleLoadNews = async (categoryId) => {
                     }</span>  
   
                   </p>
-               
-                  
-                  </div>
+               </div>
                 <div
                   class="text-[#171717B3] card-actions justify-start text-sm font-normal"
                 >
@@ -113,7 +111,6 @@ function showTime(sec) {
   let hrs = Math.floor(sec / 3600);
   let remainingSeconds = sec % 3600;
   let min = Math.floor(remainingSeconds / 60);
-  // let secs = remainingSeconds % 60;
   return `<div>${hrs}hrs ${min}min ago</div>`;
 }
 
@@ -124,14 +121,12 @@ function sortByViews() {
   const cardContainer = document.getElementById("card-container");
   const cards = Array.from(cardContainer.getElementsByClassName("card"));
 
-  // Sort the cards by views in descending order
   cards.sort((a, b) => {
     const viewsA = parseInt(a.querySelector(".card-actions").textContent);
     const viewsB = parseInt(b.querySelector(".card-actions").textContent);
     return viewsB - viewsA;
   });
 
-  // Clear the card container and append the sorted cards
   cardContainer.textContent = "";
   cards.forEach((card) => {
     cardContainer.appendChild(card);
