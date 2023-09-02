@@ -10,21 +10,33 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    </head>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  
   <body class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-16 my-8">
     <div>
       <h3 class="text-2xl font-semibold">
         <span class="text-red-400">Q1.</span>Discuss the scope of var, let, and
         const
       </h3>
-      <p>
-        <span class="text-lime-600 font-semibold text-lg">Ans:</span>In
+      <p class="my-3">
+        <span class="text-lime-600 font-bold text-lg">Answer:</span>In
         JavaScript, the scope of variables declared using var, let, and const
         differs, determining where and how these variables can be accessed
         within your code. Let's delve into the scope of each of these variable
         declarations:
         <br />
-        <span class="text-lg font-medium">1.var:</span> <br />
+        <span class="text-lg font-medium">1.<b>var</b>:</span> <br />
         <ul class="list-disc pl-8">
           <li>var has a function-level or global scope, depending on where it's declared.</li>
           <li>If declared inside a function, it's limited to that function's scope.</li>
@@ -32,7 +44,7 @@
           <li>Variables declared with var are hoisted to the top of their containing function or script, which means you can access them before their declaration, but they'll have an initial value of undefined.</li>
         </ul>
         <br />
-        <span class="text-lg font-medium">2.let:</span> <br />
+        <span class="text-lg font-medium">2.<b>let</b>:</span> <br />
        <ul class="list-disc pl-8">
         <li>let has a block-level scope, meaning it's confined to the block (enclosed by curly braces) in which it's declared.</li>
         <li>Unlike var, let variables are not hoisted to the top of the block. They can only be accessed after their declaration within the block.</li>
@@ -41,7 +53,7 @@
        </ul>
         
         <br />
-        <span class="text-lg font-medium">3.const:</span> <br />
+        <span class="text-lg font-medium">3.<b>const</b>:</span> <br />
 
         <ul class="list-disc pl-8">
           <li>const also has block-level scope, similar to let. It's limited to the block in which it's declared.</li>
@@ -51,65 +63,65 @@
     </div>
     <!-- second question -->
     <div class="my-6">
-      <h3 class="text-xl font-semibold">
+      <h3 class="text-2xl font-semibold">
         <span class="text-red-400">Q2.</span>Tell us the use cases of null and
         undefined?
       </h3>
-      <p>
-        <span class="text-lime-600 font-semibold text-lg">Ans:</span>
-        In JavaScript, null and undefined are used to represent the absence of a
-        value. Null is explicitly assigned by the programmer to indicate that a
-        variable has no value, while undefined means that a variable has been
+      <p class="my-3">
+        <span class="text-lime-600 font-bold text-lg">Answer:</span>
+        In JavaScript, <b>null</b> and <b>undefined</b> are used to represent the absence of a
+        value. <b>Null</b> is explicitly assigned by the programmer to indicate that a
+        variable has no value, while <b>undefined</b> means that a variable has been
         declared but has not been assigned a value. These values can be used in
         various scenarios such as checking for the existence of an object
-        property, indicating errors or empty values in functions, and
-        initializing variables.
+        property, indicating errors or empty values in <b>functions</b>, and
+       <b> initializing variables</b>.
       </p>
     </div>
     <!-- third question -->
     <div class="my-6">
-      <h3 class="text-xl font-semibold">
-        <span class="text-red-400">Q3.</span>What do you mean by REST API? ?
+      <h3 class="text-2xl font-semibold">
+        <span class="text-red-400">Q3.</span>What do you mean by REST API?
       </h3>
-      <p>
-        <span class="text-lime-600 font-semibold text-lg">Ans:</span> REST API
-        stands for Representational State Transfer Application Programming
-        Interface. It is a set of guidelines and principles for building and
+      <p class="my-3">
+        <span class="text-lime-600 font-bold text-lg">Answer:</span><b> REST API</b>
+        stands for <b>Representational State Transfer Application Programming Interface</b>
+        . It is a set of guidelines and principles for building and
         interacting with web services. REST is an architectural style that is
         commonly used in designing networked applications. REST APIs allow
         different software applications to communicate with each other over the
-        internet using HTTP methods like GET, POST, PUT, and DELETE. The key
-        principles of REST include: <br />
+        internet using HTTP methods like <b>GET</b>, <b>POST</b>, <b>PUT</b>, and <b>DELETE</b>. <br> <br> The key
+        principles of <b>REST</b> include: <br />
         <br />
-        <span class="text-lg font-medium">1.Client-Server Architecture:</span>
+        <span class="text-lg font-medium">1.<b>Client-Server Architecture</b>:</span>
         Separation of concerns between the client (the application making the
         request) and the server (the application providing the resource). <br />
         <br />
-        <span class="text-lg font-medium">2.Statelessness:</span> Each request
+        <span class="text-lg font-medium">2.<b>Statelessness</b>:</span> Each request
         from the client to the server must contain all the information needed to
         understand and process the request. The server doesn't store any client
         state between requests. <br />
         <br />
-        <span class="text-lg font-medium">3.Cacheability:</span> Responses from
+        <span class="text-lg font-medium">3.<b>Cacheability</b>:</span> Responses from
         the server can be cached by clients to improve performance and reduce
         the need for repeated requests. <br />
         <br />
-        <span class="text-lg font-medium">4.Uniform Interface:</span> A
+        <span class="text-lg font-medium">4.<b>Uniform Interface</b>:</span> A
         consistent set of well-defined methods (HTTP verbs) for interacting with
         resources. Resources are represented in a standardized format, such as
         JSON or XML. <br />
         <br />
-        <span class="text-lg font-medium">5.Layered System:</span> The
+        <span class="text-lg font-medium">5.<b>Layered System</b>:</span> The
         architecture can be composed of multiple layers, with each layer having
         a specific functionality. <br />
         <br />
-        <span class="text-lg font-medium">6.Code on Demand (optional):</span>
+        <span class="text-lg font-medium">6.<b>Code on Demand</b> (optional):</span>
         The ability to send executable code from the server to the client, which
         the client can run within its own context.
         <br />
         <br />
-        REST APIs are widely used for building web applications, mobile apps,
-        and other distributed systems. They provide a flexible and scalable way
+        <b>REST APIs</b> are widely used for building <b>web applications</b>,<b>mobile apps</b>,
+        and <b>other distributed systems</b>. They provide a flexible and scalable way
         for different software components to communicate and exchange data over
         the internet.
       </p>
