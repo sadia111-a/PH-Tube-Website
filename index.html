@@ -34,10 +34,12 @@
           </div>
           <div class="navbar-center flex-col lg:flex">
             <button
+              onclick="sortByViews()"
               class="btn btn-secondary hover:text-white hover:bg-[#FF1F3D] text-[#252525] bg-[#25252533] border-none text-sm lg:text-xl font-medium"
             >
               Sort by view
             </button>
+            <div id="sort-data"></div>
           </div>
           <div class="navbar-end">
             <button
@@ -73,5 +75,6 @@
     <footer></footer>
     <script src="index.js"></script>
     <script src="blog.js"></script>
+    <!-- <script src="test.js"></script> -->
   </body>
 </html>
